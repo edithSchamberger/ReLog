@@ -1,0 +1,50 @@
+server:
+  port: 8080
+
+spring:
+  #  H2 DATABASE
+  #  Url de acceso a BBDD -> http://localhost:3286/h2-console/
+  #h2.console.enabled: true
+    #datasource:
+    #url: jdbc:h2:mem:relog
+    #username: sa
+    #password: 1234
+  #driverClassName: org.h2.Driver
+
+  #  SQL DATABASE
+  #  Se debe contar con un servidor MySQL local con una BBDD creada con el nombre "relog"
+
+  #  datasource:
+  #    driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+  #    url: jdbc:mysql://localhost:3306/relog
+  #    username: root
+  #    platform: mssql
+  #    testWhileIdle: true
+  #    initialization-mode: always
+  #    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  # Database
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/relog
+    username: postgres
+    password: thiago30
+
+  jpa:
+    show-sql: false
+    hibernate:
+      ddl-auto: update
+  sql:
+    init:
+      platform: h2
+security:
+  jwt:
+    secret: "ghk45jgherogho834go3h4g"
+    issuer: "Main"
+    ttlMillis: 608500
+
+# JWT
+#security.jwt.secret=ghk45jgherogho834go3h4g
+#security.jwt.issuer=Main
+#La sesion dura una semana
+#security.jwt.ttlMillis=604800000
