@@ -1,8 +1,8 @@
 // Call the dataTables jQuery plugin
 $(document).ready(function() {
-    cargarUsuarios();
+    cargarUsuarios()
   $('#usuarios').DataTable();
-  //actualizarEmailDelUsuario();
+
 });
 /*
 function actualizarEmailDelUsuario() {
