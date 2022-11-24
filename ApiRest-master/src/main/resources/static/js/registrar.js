@@ -3,12 +3,11 @@ $(document).ready(function() {
 });
 
 
-async function registrarUsuario() {
+async function registrarPersona() {
   let datos = {};
   datos.nombre = document.getElementById('txtNombre').value;
   datos.apellido = document.getElementById('txtApellido').value;
   datos.email = document.getElementById('txtEmail').value;
-  datos.telefono = 123;
   datos.password = document.getElementById('txtPassword').value;
 
   let repetirPassword = document.getElementById('txtRepetirPassword').value;

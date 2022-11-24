@@ -46,11 +46,6 @@ public class DataSeeder implements CommandLineRunner {
 
     private void createClases() {
         claseRepository.save(Clase.builder()
-                .descripcion("Descripcion de la municion")
-                .tipo(ClaseEnum.MUNICION.getName())
-                .build());
-
-        claseRepository.save(Clase.builder()
                 .tipo(ClaseEnum.RACIONAMIENTO.getName())
                 .descripcion("Descripcion del racionamiento")
                 .build());
@@ -64,6 +59,12 @@ public class DataSeeder implements CommandLineRunner {
                 .descripcion("Descripcion del combustible")
                 .tipo(ClaseEnum.COMBUSTIBLE.getName())
                 .build());
+
+        claseRepository.save(Clase.builder()
+                .descripcion("Descripcion de la municion")
+                .tipo(ClaseEnum.MUNICION.getName())
+                .build());
+
     }
 
 }

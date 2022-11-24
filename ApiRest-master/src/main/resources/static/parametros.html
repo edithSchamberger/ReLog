@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Boot Cripto - Parámetros</title>
+    <title>Boot ReLog - Parámetros</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -35,49 +35,35 @@
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-laugh-wink"></i>
                 </div>
-                <div class="sidebar-brand-text mx-3">Boot Cripto<sup>2</sup></div>
+                <div class="sidebar-brand-text mx-3">Boot ReLog</div>
             </a>
 
             <!-- Divider -->
             <hr class="sidebar-divider my-0">
 
-            <!-- Nav Item - Dashboard -->
-            <li class="nav-item">
-                <a class="nav-link" href="principal.html">
-                    <i class="fas fa-fw fa-wallet"></i>
-                    <span>Wallet</span></a>
-            </li>
 
             <!-- Divider -->
             <hr class="sidebar-divider">
 
-            <!-- Nav Item - Tables -->
-            <li class="nav-item">
-                <a class="nav-link" href="principal.html">
-                    <i class="fas fa-fw fa-table"></i>
-                    <span>Criptomonedas</span></a>
-            </li>
 
-            <!-- Divider -->
-            <hr class="sidebar-divider">
 
             <!-- Nav Item - Tables -->
             <li class="nav-item">
                 <a class="nav-link" href="cargarDisponible.html">
-                    <i class="fas fa-fw fa-dollar-sign"></i>
-                    <span>Cargar Dinero</span></a>
+                    <i class="fas fa-book "></i>
+                    <span>Cargar Requerimiento</span></a>
             </li>
 
 			<!-- Divider -->
             <hr class="sidebar-divider">
 
-            <!-- Nav Item - Tables -->
-            <li class="nav-item active">
-                <a class="nav-link" href="parametros.html">
-                    <i class="fas fa-fw fa-cog"></i>
-                    <span>Parámetros</span></a>
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item">
+                <a class="nav-link" href="principal.html">
+                    <i class="fas fa-fw fa-wallet"></i>
+                    <span>Atras</span></a>
             </li>
-			
+
 
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
@@ -191,11 +177,11 @@
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                                Ganancia por operación</div>
+                                                Racionamiento</div>
                                             <div class="h5 mb-0 font-weight-bold text-gray-800"><span class="mr-2 d-none d-lg-inline text-gray-600 small" id="txt-ganPorOp-param">...</span></div>
                                         </div>
                                         <div class="col-auto">
-                                            <i class="fas fa-calendar fa-2x text-gray-300"></i>
+                                            <i class="fas fa-percent fa-2x text-gray-300"></i>
                                         </div>
                                     </div>
                                 </div>
@@ -209,11 +195,11 @@
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
-                                                Pérdida por operación</div>
+                                                Vestuario y Equipo</div>
                                             <div class="h5 mb-0 font-weight-bold text-gray-800"><span class="mr-2 d-none d-lg-inline text-gray-600 small" id="txt-perPorOp-param">...</span></div>
                                         </div>
                                         <div class="col-auto">
-                                            <i class="fas fa-comments fa-2x text-gray-300"></i>
+                                            <i class="fas fa-percent fa-2x text-gray-300"></i>
                                         </div>
                                     </div>
                                 </div>
@@ -227,11 +213,28 @@
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
-                                                Variación entre caídas</div>
+                                                Combustible y Lubricantes</div>
                                             <div class="h5 mb-0 font-weight-bold text-gray-800"><span class="mr-2 d-none d-lg-inline text-gray-600 small" id="txt-varEntreCaidas-param">...</span></div>
                                         </div>
                                         <div class="col-auto">
-                                            <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
+                                            <i class="fas fa-percent fa-2x text-gray-300"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-primary shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                                Munición</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800"><span class="mr-2 d-none d-lg-inline text-gray-600 small" id="txt-ganPorOp-param">...</span></div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-percent fa-2x text-gray-300"></i>
                                         </div>
                                     </div>
                                 </div>
@@ -314,43 +317,10 @@
                     <!-- Content Row -->
                     <div class="container-fluid">
 
-                        <!-- Page Heading -->
-						<h1 class="h3 mb-2 text-gray-800">Actualizar parámetros</h1>
 
 
-                        <!-- DataTales Example -->
-                        <div class="card shadow mb-4">
-                            <div class="card-header py-3">
-                                <h6 class="m-0 font-weight-bold text-primary">Listado de parámetros a establecer</h6>
-                            </div>
 
-                            <div class="card-body">
 
-                                <form class="user">
-                                    <div class="form-group row">
-                                        <div class="col-sm-6 mb-3 mb-sm-0">
-                                            <input type="text" class="form-control form-control-user" id="margenGananciaPorOp"
-                                                   placeholder="Ganancia por operación">
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <input type="text" class="form-control form-control-user" id="margenPerdidaPorOp"
-                                                   placeholder="Pérdida por operación">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <div class="col-sm-6">
-                                            <input type="text" class="form-control form-control-user" id="variacionEstrCaidas"
-                                                   placeholder="Variación entre caídas">
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <!-- Divider -->
-                                        <hr class="sidebar-divider">
-                                        <a onclick="modificarParametros()" href="#" class="btn btn-primary btn-user btn-block">Actualizar</a>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
 
                     </div>
 
@@ -401,7 +371,7 @@
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>-->
 
     <!-- Custom scripts for all pages
-    <script src="js/wallet.min.js"></script>-->
+    <script src="js/principal.min.js"></script>-->
 
     <!-- Page level plugins
     <script src="vendor/chart.js/Chart.min.js"></script>-->
@@ -410,7 +380,7 @@
     <script src="js/demo/chart-area-demo.js"></script>
     <script src="js/demo/chart-pie-demo.js"></script>-->
     <!-- Page level custom scripts
-    <script src="js/wallet.js"></script>-->
+    <script src="js/principal.js"></script>-->
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -419,7 +389,7 @@
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom scripts for all pages-->
-    <script src="js/wallet.min.js"></script>
+    <script src="js/principal.min.js"></script>
 
     <!-- Page level plugins -->
     <script src="vendor/datatables/jquery.dataTables.min.js"></script>

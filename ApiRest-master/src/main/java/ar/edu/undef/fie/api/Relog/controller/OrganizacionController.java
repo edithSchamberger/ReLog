@@ -1,5 +1,6 @@
 package ar.edu.undef.fie.api.Relog.controller;
 
+import ar.edu.undef.fie.api.Relog.exception.GenericAlreadyExistsExeption;
 import ar.edu.undef.fie.api.Relog.service.OrganizacionService;
 import ar.edu.undef.fie.api.Relog.model.request.OrganizacionRequest;
 import ar.edu.undef.fie.api.Relog.model.response.EfectoResponse;
@@ -39,5 +40,15 @@ public class OrganizacionController {
     public ResponseEntity<List<EfectoResponse>> getEfectosByOrganizacionid(@PathVariable Long organizacion_id) {
         return ResponseEntity.status(HttpStatus.CREATED).body(organizacionService.getEfectos(organizacion_id));
     }
+/*
+    @DeleteMapping(value = "/organizacion/{idUser}")
+    public ResponseEntity<String> eliminarOrganizacion(@PathVariable Long idUser) throws GenericAlreadyExistsExeption {
+        organizacionService.eliminar(organizacionService.findById(idUser));
+        return new ResponseEntity<>(
+                "Se elimino la organizacion",
+                HttpStatus.OK);
+    }
+*/
+
 
 }

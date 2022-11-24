@@ -1,5 +1,6 @@
 package ar.edu.undef.fie.api.Relog.service.impl;
 
+import ar.edu.undef.fie.api.Relog.model.entity.inicio.Usuario;
 import ar.edu.undef.fie.api.Relog.model.response.EfectoResponse;
 import ar.edu.undef.fie.api.Relog.model.response.EstadoAbastecimientoResponse;
 import ar.edu.undef.fie.api.Relog.model.response.MovimientoSimpleResponse;
@@ -14,8 +15,6 @@ import ar.edu.undef.fie.api.Relog.model.entity.Ubicacion;
 import ar.edu.undef.fie.api.Relog.model.entity.clase.Clase;
 import ar.edu.undef.fie.api.Relog.model.request.OrganizacionRequest;
 
-import ar.edu.undef.fie.api.Relog.model.response.*;
-import ar.edu.undef.fie.api.Relog.repository.*;
 import ar.edu.undef.fie.api.Relog.service.OrganizacionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -119,7 +118,17 @@ public class OrganizacionServiceImpl implements OrganizacionService {
                 .build();
 
     }
+/*
+    @Override
+    public void eliminar(Organizacion organizacion) {
+        organizacionRepository.delete(organizacion);
+    }
 
+    @Override
+    public Organizacion findById(Long idUser) {
+        return organizacionRepository.findById(idUser);
+    }
+*/
     private OrganizacionResponse getBuildOrganizacionresponse(Optional<Organizacion> org) {
         return OrganizacionResponse.builder()
                 .organizacionId(org.get().getOrganizacionId())
